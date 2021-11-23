@@ -17,7 +17,7 @@ data["timeTaken"] = (diff.dt.components["hours"] * 60) + diff.dt.components["min
 unique = pd.unique(data[["origin", "destination"]].values.ravel("K"))
 
 def get_origins():
-    return data["origin"].to_list()
+    return pd.unique(data["origin"].values.ravel("K"))
 
 def get_destinations():
-    return data["destination"].to_list()
+    return pd.unique(data["destination"].values.ravel("K"))
