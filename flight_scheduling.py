@@ -7,12 +7,12 @@ import data_processing
 
 
 window = Tk()
-window.title("Flight schedular")
+window.title("Flight scheduler")
 # window.configure(background="black")
 window.geometry("500x500")
 
 
-Label(window, text = "Welcome to the Flight Schedular", font=('Times',16)).grid(row=0, column=0, sticky=W)
+Label(window, text = "Welcome to the Flight Scheduler", font=('Times',16)).grid(row=0, column=0, sticky=W)
 Label(window, text = "Please choose the algorithm:", font=('Times',12)).grid(row=1, column=0, sticky=W)
 
 output = None
